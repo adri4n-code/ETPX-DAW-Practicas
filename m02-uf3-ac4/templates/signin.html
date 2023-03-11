@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    <header>
+        <h1>Aplicació web amb base de dades (M02-UF3-AC4)</h1>
+    </header>
+    <main>
+        <form action="{{url_for('newUser')}}" method="POST" class="formulario">
+        <input class="controls"type="text"  name="user"   placeholder="Introduzca el nombre de usuario">
+        <input class="controls"type="password"  name="contrasena"   placeholder="Introduzca la contraseña">
+        <input class="controls"type="text"  name="Name"   placeholder="Introduzca su nombre">
+        <input class="controls"type="text"  name="Surname 1"   placeholder="Introduzca su primer apellido">
+        <input class="controls"type="text"  name="Surname 2"   placeholder="Introduzca su segundo apellido">
+        <input class="controls"type="number"  name="Age"   placeholder="Introduzca su edad">
+        <input class="controls"type="text"  name="Genre" placeholder = " H, D, NS/NC">
+        <input class="button"type="submit" value="Registrar">   
+        </form>
+        <br></br>
+
+    </main>
+    <footer>
+        <p>ETPX 2022-2023 - AdriánFR</p>
+    </footer>
+</body>
+</html>
